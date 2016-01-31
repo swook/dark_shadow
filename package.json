@@ -5,7 +5,7 @@
   "license": "closed",
   "scripts": {
     "build": "npm run build:js && npm run build:css",
-    "build:js": "coffee src/scripts -o app/script.js",
+    "build:js": "coffee --compile --output app/scripts src/scripts",
     "build:css": "lessc src/styles/main.less app/style.css",
     "setup": "cd app && bower install",
     "webserver": "http-server app/"

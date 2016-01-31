@@ -1,5 +1,6 @@
+**/npm-debug.log
 node_modules/
 
 app/bower_components/
-app/script.js
+app/scripts/
 app/style.css
