@@ -8,15 +8,19 @@
     "build:js": "coffee --compile --output app/scripts src/scripts",
     "build:css": "lessc src/styles/main.less app/style.css",
     "setup": "cd app && bower install",
+    "watch": "npm run watch:js & npm run watch:css",
+    "watch:js": "coffee --compile --watch --output app/scripts src/scripts",
+    "watch:css": "onchange 'src/styles/**' -- npm run build:css",
     "webserver": "http-server app/"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "bower": ">=1.7.7",
-    "coffee-script": ">=1.10.0",
-    "http-server": ">=0.8.5",
-    "less": ">=2.6.0",
-    "livereload": ">=0.4.1"
+    "bower": "1.7.7",
+    "coffee-script": "1.10.0",
+    "http-server": "0.8.5",
+    "less": "2.6.0",
+    "livereload": "0.4.1",
+    "onchange": "2.0.0"
   }
 }
