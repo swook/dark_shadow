@@ -1,0 +1,16 @@
+{
+  "name": "dark_shadow",
+  "main": "index.html",
+  "license": "closed",
+  "private": true,
+  "dependencies": {
+    "phaser": ">=2.4.4"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

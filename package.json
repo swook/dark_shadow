@@ -1,0 +1,22 @@
+{
+  "name": "dark_shadow",
+  "version": "0.0.1",
+  "description": "A game",
+  "license": "closed",
+  "scripts": {
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "coffee src/scripts -o app/script.js",
+    "build:css": "lessc src/styles/main.less app/style.css",
+    "setup": "cd app && bower install",
+    "webserver": "http-server app/"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bower": ">=1.7.7",
+    "coffee-script": ">=1.10.0",
+    "http-server": ">=0.8.5",
+    "less": ">=2.6.0",
+    "livereload": ">=0.4.1"
+  }
+}
