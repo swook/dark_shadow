@@ -7,6 +7,7 @@
     "build": "npm run build:js && npm run build:css",
     "build:js": "coffee --compile --output app/scripts src/scripts",
     "build:css": "lessc src/styles/main.less app/style.css",
+    "dev": "npm run webserver & npm run watch",
     "setup": "cd app && bower install",
     "watch": "npm run watch:js & npm run watch:css",
     "watch:js": "coffee --compile --watch --output app/scripts src/scripts",
